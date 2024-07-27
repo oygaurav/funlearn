@@ -1,0 +1,210 @@
+:root {
+
+    /* color variables  */
+    --white: #FFFFFF;
+    --black: #000000;
+    --grey: #efefef;
+    --purple: #1C1421;
+    --yellow: #FFC400;
+    --purple2: #5d4b68;
+    --blue: #1052df;
+
+    /* typo varibale*/
+    --emilys: "Emilys Candy", serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    font-family: var(--emilys);
+    background-color: var(--white);
+}
+
+
+
+
+
+.search img{
+    width: 20px;
+}
+
+.d-md-block {
+    display: none;
+}
+
+.center-image {
+    height: 40px; 
+    width: auto;
+}
+
+
+.navbar-brand.mx-auto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-icon img{
+    width: 20px;
+}
+
+
+.navbar-brand {
+    position: relative;
+    z-index: 1050; 
+}
+
+
+.navbar-collapse {
+    position: fixed;
+    top: 0;
+    left: -50%; 
+    width: 50%; 
+    height: 100%;
+    background-color: white;
+    overflow-y: auto;
+    transition: left 0.5s ease-in-out; 
+    z-index: 1040; 
+}
+
+
+.navbar-collapse.show {
+    left: 0; 
+}
+
+
+.navbar-collapse .close {
+    position: absolute;
+    top: 60px; 
+    right: 10px;
+    font-size: 1.5rem;
+    z-index: 1060; 
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+.search-icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1060; 
+}
+
+.navbar-nav {
+    margin-top: -600px;
+    padding-left: 20px;
+}
+
+
+.navbar-nav .dropdown-menu {
+    display: none; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 160px;
+    z-index: 1000;
+}
+
+
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+.dropdown-menu .dropdown-item {
+    padding: 8px 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+
+.navbar-nav {
+    position: relative;
+}
+
+/* navbar ends */
+
+
+/* learning starts */
+
+.card-item{
+    border-radius: 30px;
+}
+
+.card-item img{
+    border-radius: 30px 30px 0px 0px;
+}
+
+.card-body{
+    border-radius: 0 0 30px 30px;
+    height: 40px;
+}
+
+.card-title{
+    margin-top: -8px;
+}
+
+.card-body-rhymes{
+    background-color: #DAF6FF;
+    border-radius: 0 0 30px 30px;
+}
+
+.card-body-science{
+    background-color: #E5FFDA;
+    border-radius: 0 0 30px 30px;
+}
+
+.card-body-instruments{
+    background-color: #FFECDA;
+    border-radius: 0 0 30px 30px;
+}
+
+.card-body-colors{
+    background-color: #FFDAEF;
+    border-radius: 0 0 30px 30px;
+}
+
+/* learnings ends */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* navbar ends here */
