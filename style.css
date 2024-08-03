@@ -146,10 +146,22 @@ body {
     position: relative;
 }
 
+.fun-header img{
+    height: 37px;
+}
+
 /* navbar ends */
 
+/* hero starts */
 
-/* learning starts */
+.fun-hero img{
+    border-radius: 16px;
+}
+
+/* hero ends */
+
+
+/* lp starts */
 
 .card-item{
     border-radius: 30px;
@@ -159,36 +171,142 @@ body {
     border-radius: 30px 30px 0px 0px;
 }
 
-.card-body{
-    border-radius: 0 0 30px 30px;
-    height: 40px;
-}
 
-.card-title{
-    margin-top: -8px;
+
+.card-title-main{
+    margin-top: -6px;
+    text-align: center;
 }
 
 .card-body-rhymes{
     background-color: #DAF6FF;
+    height: 40px;
     border-radius: 0 0 30px 30px;
 }
 
 .card-body-science{
-    background-color: #E5FFDA;
     border-radius: 0 0 30px 30px;
+    height: 40px;
+    background-color: #E5FFDA;
 }
 
 .card-body-instruments{
-    background-color: #FFECDA;
     border-radius: 0 0 30px 30px;
+    height: 40px;
+    background-color: #FFECDA;
 }
 
 .card-body-colors{
-    background-color: #FFDAEF;
     border-radius: 0 0 30px 30px;
+    height: 40px;
+    background-color: #FFDAEF;
 }
 
-/* learnings ends */
+.category{
+    color: #EE2A7B;
+}
+
+a{
+    text-decoration: none;
+}
+/* lp ends */
+
+/* rhymes starts */
+
+.rhymes-hero{
+    background-color: #367CB2;
+    color: white;
+    text-align: center;
+    padding: 100px 200px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+    .rhymes-hero{
+        padding: 50px 4px;
+    }
+}
+
+.fun-rhymes .card{
+    border-radius: 16px;
+    border: none;
+}
+
+.fun-rhymes .card img{
+    border-radius: 16px;
+}
+
+.fun-rhymes .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .fun-rhymes .card {
+        flex-direction: row;
+    }
+
+    .fun-rhymes .card-img-top {
+        width: 50%;
+        height: auto;
+    }
+
+    .fun-rhymes .card-body {
+        flex: 1;
+        padding: 1rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .fun-rhymes .card {
+        flex-direction: column;
+    }
+
+    .fun-rhymes .card-img-top {
+        width: 100%;
+        height: auto;
+    }
+
+    .fun-rhymes .order-md-2 {
+        order: 1 !important;
+    }
+}
+
+
+
+
+/* rhymes ends */
+
+/* science strats */
+
+.science-hero{
+    background-color: #37A167;
+}
+
+/* science ends */
+/* instruments starts */
+
+.fun-instruments .card{
+    border-radius: 16px;
+    border: none;
+}
+
+.fun-instruments .card img{
+    border-radius: 16px;
+}
+
+.instruments-hero{
+    background-color: #F1833E;
+}
+/* instruments ends */
+
+/* colors starts */
+
+.colors-hero{
+    background-color: #C55174;
+}
+
+/* colors ends */
 
 
 
