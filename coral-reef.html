@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 </head>
 
 <body>
@@ -22,41 +24,41 @@
     <div class="container d-md-block fun-header">
         <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3">
             <div class="col-md-3 mb-2 mb-md-0">
-                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                <a href="./index.html" class="d-inline-flex link-body-emphasis text-decoration-none">
                     <img src="./assets/logo/Logo.png" alt="">
                 </a>
             </div>
 
             <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-                <li><a href="#" class="nav-link px-2 text-dark active">Home</a></li>
+                <li><a href="./index.html" class="nav-link px-2 text-dark active"><i class="fa-solid fa-house"></i> Home</a></li>
                 <li class="dropdown">
                     <a class="nav-link text-dark dropdown-toggle" href="#" id="dropdownMenuButton"
-                        aria-expanded="false">Categories</a>
+                        aria-expanded="false"> <i class="fa-solid fa-list"></i> Categories</a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Animals</a></li>
-                        <li><a class="dropdown-item" href="#">Animal Name & Sound</a></li>
-                        <li><a class="dropdown-item" href="#">Birds</a></li>
-                        <li><a class="dropdown-item" href="#">Colors</a></li>
-                        <li><a class="dropdown-item" href="#">Coral Reefs</a></li>
-                        <li><a class="dropdown-item" href="#">Fruits</a></li>
-                        <li><a class="dropdown-item" href="#">Galaxy</a></li>
-                        <li><a class="dropdown-item" href="#">Instruments</a></li>
-                        <li><a class="dropdown-item" href="#">Jobs</a></li>
-                        <li><a class="dropdown-item" href="#">Kitchen Items</a></li>
-                        <li><a class="dropdown-item" href="#">Learn Languages</a></li>
-                        <li><a class="dropdown-item" href="#">Months</a></li>
-                        <li><a class="dropdown-item" href="#">Phonics</a></li>
-                        <li><a class="dropdown-item" href="#">Rhymes</a></li>
-                        <li><a class="dropdown-item" href="#">Science</a></li>
-                        <li><a class="dropdown-item" href="#">Seasons</a></li>
-                        <li><a class="dropdown-item" href="#">Shapes </a></li>
-                        <li><a class="dropdown-item" href="#">Sports</a></li>
-                        <li><a class="dropdown-item" href="#">Toys</a></li>
-                        <li><a class="dropdown-item" href="#">Vehicles</a></li>
+                        <li><a class="dropdown-item" href="./animals.html">Animals</a></li>
+                        <li><a class="dropdown-item" href="./animal-sound.html">Animal Name & Sound</a></li>
+                        <li><a class="dropdown-item" href="./birds.html">Birds</a></li>
+                        <li><a class="dropdown-item" href="./colors.html">Colors</a></li>
+                        <li><a class="dropdown-item" href="./coral-reef.html">Coral Reefs</a></li>
+                        <li><a class="dropdown-item" href="./fruits.html">Fruits</a></li>
+                        <li><a class="dropdown-item" href="./galaxy.html">Galaxy</a></li>
+                        <li><a class="dropdown-item" href="./instruments.html">Instruments</a></li>
+                        <li><a class="dropdown-item" href="./jobs.html">Jobs</a></li>
+                        <li><a class="dropdown-item" href="./kitchen.html">Kitchen Items</a></li>
+                        <li><a class="dropdown-item" href="./learn-languages.html">Learn Languages</a></li>
+                        <li><a class="dropdown-item" href="./months.html">Months</a></li>
+                        <li><a class="dropdown-item" href="./phonics.html">Phonics</a></li>
+                        <li><a class="dropdown-item" href="./rhymes.html">Rhymes</a></li>
+                        <li><a class="dropdown-item" href="./science.html">Science</a></li>
+                        <li><a class="dropdown-item" href="./seasons.html">Seasons</a></li>
+                        <li><a class="dropdown-item" href="./shapes.html">Shapes </a></li>
+                        <li><a class="dropdown-item" href="./sports.html">Sports</a></li>
+                        <li><a class="dropdown-item" href="./toys.html">Toys</a></li>
+                        <li><a class="dropdown-item" href="./vehicles.html">Vehicles</a></li>
 
                     </ul>
                 </li>
-                <li><a href="#" class="nav-link px-2 text-dark">My Account</a></li>
+                <li><a href="./myaccount.html" class="nav-link px-2 text-dark"><i class="fa-solid fa-user"></i> My Account</a></li>
 
             </ul>
 
@@ -68,71 +70,75 @@
             </div>
         </header>
     </div>
-
-    <nav class="navbar navbar-expand-lg d-md-none" aria-label="Tenth navbar example">
-        <div class="container-fluid">
-            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarsExample08" aria-controls="navbarsExample08" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="navbar-brand mx-auto">
-                <img src="./assets/logo/Logo.png" alt="Center Image" class="center-image">
-            </div>
+    <!-- mobile nav starts -->
+    <header class="d-md-none">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span>&#9776;</span>
+        </div>
+        <div class="logo-center">
+            <a href="./index.html"><img src="./assets/logo/Logo.png" alt="Logo"></a>
         </div>
         <div class="search-icon">
-            <a href="#">
-                <img src="./assets/logo/search.png" alt="">
-            </a>
+            <img src="./assets/logo/search.png" alt="Logo">
         </div>
-        <div class="navbar-collapse collapse" id="navbarsExample08">
-            <button type="button" class="close" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link text-dark active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link text-dark dropdown-toggle" href="#" id="dropdownMenuButton"
-                        aria-expanded="false">Categories</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item" href="#">Animals</a></li>
-                        <li><a class="dropdown-item" href="#">Animal Name & Sound</a></li>
-                        <li><a class="dropdown-item" href="#">Birds</a></li>
-                        <li><a class="dropdown-item" href="#">Colors</a></li>
-                        <li><a class="dropdown-item" href="#">Coral Reefs</a></li>
-                        <li><a class="dropdown-item" href="#">Fruits</a></li>
-                        <li><a class="dropdown-item" href="#">Galaxy</a></li>
-                        <li><a class="dropdown-item" href="#">Instruments</a></li>
-                        <li><a class="dropdown-item" href="#">Jobs</a></li>
-                        <li><a class="dropdown-item" href="#">Kitchen Items</a></li>
-                        <li><a class="dropdown-item" href="#">Learn Languages</a></li>
-                        <li><a class="dropdown-item" href="#">Months</a></li>
-                        <li><a class="dropdown-item" href="#">Phonics</a></li>
-                        <li><a class="dropdown-item" href="#">Rhymes</a></li>
-                        <li><a class="dropdown-item" href="#">Science</a></li>
-                        <li><a class="dropdown-item" href="#">Seasons</a></li>
-                        <li><a class="dropdown-item" href="#">Shapes </a></li>
-                        <li><a class="dropdown-item" href="#">Sports</a></li>
-                        <li><a class="dropdown-item" href="#">Toys</a></li>
-                        <li><a class="dropdown-item" href="#">Vehicles</a></li>
+    </header>
+    <nav id="mobile-nav" class="mobile-nav">
+        <div class="nav-header">
+            <div class="logo-left">
+                <a href="./index.html"><img src="./assets/logo/Logo.png" alt="Logo"></a>
+            </div>
+            <div class="close-icon" onclick="toggleMenu()">&times;</div>
+        </div>
+        <ul>
+            <li><a href="./index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li class="dropdown">
+                <a href="#" onclick="toggleDropdown(event)"><i class="fa-solid fa-list"></i> Categories &#9662;</a>
+                <ul class="dropdown-content">
 
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-dark" aria-current="page" href="#">My Account</a>
-                </li>
-            </ul>
-        </div>
+                    <li><a href="./animals.html">Animals</a></li>
+                    <li><a href="./animal-sound.html">Animal Name & Sound</a></li>
+                    <li><a href="./birds.html">Birds</a></li>
+                    <li><a href="./colors.html">Colours</a></li>
+                    <li><a href="./coral-reef.html">Coral Reefs</a></li>
+                    <li><a href="./fruits.html">Fruits</a></li>
+                    <li><a href="./galaxy.html">Galaxy</a></li>
+                    <li><a href="./instruments.html">Instruments</a></li>
+                    <li><a href="./jobs.html">Jobs</a></li>
+                    <li><a href="./kitchen.html">Kitchen Items</a></li>
+                    <li class="inner-dropdown">
+                        <a href="#" onclick="toggleInnerDropdown(event)">Learn Languages &#9662;</a>
+                        <ul class="inner-dropdown-content">
+                            <li><a href="./english-vocab.html">English Vocabulary</a></li>
+                            <li><a href="./learn-icelandic.html">Learn Icelandic</a></li>
+                            <li><a href="./learn-dutch.html">Learn Dutch</a></li>
+                            <li><a href="./learn-swedish.html">Learn Swedish</a></li>
+                            <li><a href="./learn-dutch-1.html">Learn Danish Level 1</a></li>
+                            <li><a href="./learn-dutch-2.html">Learn Danish Level 2</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="./months.html">Months</a></li>
+                    <li><a href="./phonics.html">Phonics</a></li>
+                    <li><a href="./rhymes.html">Rhymes</a></li>
+                    <li><a href="./science.html">Science</a></li>
+                    <li><a href="./seasons.html">Seasons</a></li>
+                    <li><a href="./shapes.html">Shapes </a></li>
+                    <li><a href="./sports.html">Sports</a></li>
+                    <li><a href="./toys.html">Toys</a></li>
+                    <li><a href="./vehicles.html">Vehicles</a></li>
+                </ul>
+            </li>
+            <li><a href="./myaccount.html" class="nav-link text-dark"><i class="fa-solid fa-user"></i> My Account</a></li>
+        </ul>
     </nav>
+
 
     <!-- navbar ends here -->
 
     <!-- hero starts from here -->
 
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid fun-hero">
             <p><Span class="category">Categories ></Span> Coral Reef</p>
             <div class="rhymes-hero rhymes-hero">
                 <h1>Coral Reef</h1>
@@ -171,53 +177,138 @@
     </section>
 
 
+<!-- snaps starts -->
+<section>
+
+    <div class="container mb-5 snaps-item">
+        <h1>You may also like</h1>
+        <div class="snaps">
+
+            <div>
+                <img src="./assets/rhymes/rhymes.png" class="img-fluid" alt="">
+                <p>Rhymes</p>
+            </div>
+            <div>
+                <img src="./assets/science/science.png" class="img-fluid" alt="">
+                <p>Science</p>
+            </div>
+            <div>
+                <img src="./assets/instruments/instruments.png" class="img-fluid" alt="">
+                <p>Instruments</p>
+            </div>
+            <div>
+                <img src="./assets/birds/birds.png" class="img-fluid" alt="">
+                <p>Birds</p>
+            </div>
+            <div>
+                <img src="./assets/kitchen/kitchen.png" class="img-fluid" alt="">
+                <p>Kitchen Items</p>
+            </div>
+            <div>
+                <img src="./assets/animals/animals.png" class="img-fluid" alt="">
+                <p>Animals</p>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!-- snaps ends -->
 
 
 
-    <!-- rhymes ends here -->
+<!-- rhymes ends here -->
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var toggler = document.querySelector('.navbar-toggler');
-            var collapse = document.querySelector('.navbar-collapse');
-            var closeBtn = document.querySelector('.navbar-collapse .close');
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const dropdownToggle = document.getElementById('dropdownMenuButton');
+        const dropdownMenu = dropdownToggle.nextElementSibling;
 
-            toggler.addEventListener('click', function () {
-                if (collapse.classList.contains('show')) {
-                    collapse.classList.remove('show');
-                } else {
-                    collapse.classList.add('show');
-                }
-            });
-
-            closeBtn.addEventListener('click', function () {
-                collapse.classList.remove('show');
-            });
+        dropdownToggle.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            const isVisible = dropdownMenu.style.display === 'block';
+            dropdownMenu.style.display = isVisible ? 'none' : 'block';
         });
-    </script>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const dropdownToggle = document.getElementById('dropdownMenuButton');
-            const dropdownMenu = dropdownToggle.nextElementSibling;
-
-            dropdownToggle.addEventListener('click', function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                const isVisible = dropdownMenu.style.display === 'block';
-                dropdownMenu.style.display = isVisible ? 'none' : 'block';
-            });
-
-            document.addEventListener('click', function () {
-                dropdownMenu.style.display = 'none';
-            });
+        document.addEventListener('click', function () {
+            dropdownMenu.style.display = 'none';
         });
+    });
 
 
-    </script>
+</script>
 
 
+<script>
+    function toggleMenu() {
+        const nav = document.getElementById('mobile-nav');
+        if (nav.style.left === '0px') {
+            nav.style.left = '-100%';
+        } else {
+            nav.style.left = '0px';
+        }
+    }
 
+    function toggleDropdown(event) {
+        event.preventDefault();
+        const parent = event.target.parentElement;
+        parent.classList.toggle('open');
+    }
+
+    function toggleInnerDropdown(event) {
+        event.preventDefault();
+        const parent = event.target.parentElement;
+        parent.classList.toggle('open');
+    }
+
+
+</script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $(".snaps").slick({
+            dots: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            autoplay: true,
+            autoplaySpeed: 2000,
+
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                    },
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: false,
+                    },
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        dots: false,
+                    },
+                },
+            ],
+            prevArrow: false,
+            nextArrow: false,
+        });
+    });
+</script>
 
 
 
