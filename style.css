@@ -30,8 +30,9 @@ body {
 
 
 
-.fun-header img{
-    height: 37px;
+.fun-header img {
+    height: 50px;
+    margin-top: 15px;
 }
 
 .search img{
@@ -188,7 +189,23 @@ header {
     display: block;
 }
 
+.search-input {
+    width: 0;
+    opacity: 0;
+    border: 1px solid #ccc;
+    padding: 5px;
+    margin-left: 10px;
+    transition: width 0.3s ease, opacity 0.3s ease;
+}
 
+.search-input.expanded {
+    width: 150px;
+    opacity: 1;
+}
+
+#searchIcon.hidden {
+    display: none;
+}
 
 /* navbar ends */
 
@@ -423,4 +440,6 @@ a{
 
 
 
-/* navbar ends here */
+
+
+
