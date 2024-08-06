@@ -103,7 +103,7 @@ header {
 
 .mobile-nav li {
     padding: 15px 20px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .mobile-nav a {
@@ -143,12 +143,12 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #f9f9f9;
+    /* background-color: #f9f9f9; */
 }
 
 .dropdown-content li {
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .dropdown-content li a {
@@ -161,6 +161,7 @@ header {
 
 .dropdown.open .dropdown-content {
     display: block;
+    margin-top: 10px;
 }
 
 .inner-dropdown-content {
@@ -168,13 +169,13 @@ header {
     list-style: none;
     padding: 0;
     margin: 0;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     margin-left: 20px;
 }
 
 .inner-dropdown-content li {
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 
 .inner-dropdown-content li a {
@@ -187,6 +188,7 @@ header {
 
 .inner-dropdown.open .inner-dropdown-content {
     display: block;
+    margin-top: 10px;
 }
 
 .search-input {
@@ -230,10 +232,15 @@ header {
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .fun-hero{
         padding-top: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
     }
     .fun-hero h3{
         font-size: 12px;
         line-height: 15px;
+    }
+    .fun-hero p{
+        padding-left: 22px;
     }
     .fun-cards h5{
         font-size: 14px;
@@ -306,7 +313,7 @@ a{
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .rhymes-hero{
-        padding: 50px 4px;
+        padding: 50px 20px;
     }
 }
 
