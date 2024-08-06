@@ -229,6 +229,39 @@ header {
     font-family: "Lora", serif;
 }
 
+.fun-hero-img{
+    position: relative;
+}
+
+.fun-hero-img-item{
+    position: absolute;
+    top: 80%;
+    left: 90%;
+    width: 80px;
+}
+
+.animal-hero-img{
+    position: relative;
+}
+
+.animal-hero-img-item{
+    position: absolute;
+    top: 2%;
+    left: 85%;
+    width: 50px;
+}
+
+.birds-hero-img{
+    position: relative;
+}
+
+.birds-hero-img-item{
+    position: absolute;
+    top: 2%;
+    left: 85%;
+    width: 50px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .fun-hero{
         padding-top: 20px;
@@ -245,7 +278,42 @@ header {
     .fun-cards h5{
         font-size: 14px;
     }
+
+    .fun-hero-img{
+        position: relative;
+    }
+    
+    .fun-hero-img-item{
+        position: absolute;
+        top: 75%;
+        left: 85%;
+    }
+
+    .animal-hero-img{
+        position: relative;
+    }
+    
+    .animal-hero-img-item{
+        position: absolute;
+        top: 1%;
+        left: 85%;
+        width: 50px;
+    }
+    .birds-hero-img{
+        position: relative;
+    }
+    
+    .birds-hero-img-item{
+        position: absolute;
+        top: 1%;
+        left: 80%;
+        width: 36px;
+    }
 }
+
+
+    
+
 
 /* hero ends */
 
@@ -298,6 +366,8 @@ header {
 a{
     text-decoration: none;
 }
+
+
 
 
 /* lp ends */
