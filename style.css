@@ -229,16 +229,42 @@ header {
     font-family: "Lora", serif;
 }
 
-.fun-hero-img{
+.fun-hero-img {
     position: relative;
 }
 
-.fun-hero-img-item{
+.overlay-content {
     position: absolute;
-    top: 80%;
-    left: 90%;
-    width: 80px;
+    top: 94%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
 }
+
+.overlay-content-2 {
+    left: 70%;
+}
+
+.overlay-content-3 {
+    left: 60%;
+}
+
+.hero-text {
+    margin: 0;
+    padding-right: 10px; 
+    color: white;
+    white-space: nowrap; 
+}
+
+.fun-hero-img-item {
+    width: 50px;
+    height: auto;
+    flex-shrink: 0; 
+}
+
+
 
 .animal-hero-img{
     position: relative;
@@ -262,7 +288,27 @@ header {
     width: 50px;
 }
 
+.rhymes-hero-img-item{
+    position: absolute;
+    top: 2%;
+    left: 85%;
+    width: 50px;
+}
+
+.hero-text{
+    font-size: 50px;
+    color: white;
+    margin-left: 324px;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
+
+    .hero-text{
+        font-size: 20px;
+        margin-top: -30px;
+        color: white;
+        margin-left: 28px;
+    }
     .fun-hero{
         padding-top: 20px;
         padding-right: 0px;
@@ -279,15 +325,42 @@ header {
         font-size: 14px;
     }
 
-    .fun-hero-img{
+    .fun-hero-img {
         position: relative;
     }
     
-    .fun-hero-img-item{
+    .overlay-content {
         position: absolute;
-        top: 75%;
-        left: 85%;
+        top: 90%;
+        left: 54%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
     }
+    
+    .overlay-content-2 {
+        left: 74%;
+    }
+    
+    .overlay-content-3 {
+        left: 64%;
+    }
+    
+    .hero-text {
+        margin: 0;
+        padding-right: 10px; /* Adjust padding as needed */
+        color: white; /* Change to desired text color */
+        white-space: nowrap; /* Prevent text from wrapping */
+    }
+    
+    .fun-hero-img-item {
+        width: 50px; /* Adjust size as needed */
+        height: auto;
+        flex-shrink: 0; /* Prevent the image from shrinking */
+    }
+    
+    
 
     .animal-hero-img{
         position: relative;
@@ -303,10 +376,10 @@ header {
         position: relative;
     }
     
-    .birds-hero-img-item{
+    .rhymes-hero-img-item{
         position: absolute;
         top: 1%;
-        left: 80%;
+        left: 39%;
         width: 36px;
     }
 }
@@ -414,7 +487,16 @@ a{
 
     .fun-rhymes .card-body {
         flex: 1;
-        padding: 1rem;
+        padding: 0rem 1rem 1rem 1rem;
+    }
+
+    .card-title{
+        font-size: 16px;
+    }
+
+    .card-text{
+        font-size: 12px;
+        font-family: "Lora", serif;
     }
 }
 
