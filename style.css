@@ -108,7 +108,7 @@ header {
 
 .mobile-nav a {
     text-decoration: none;
-    color: #000;
+    color: #3B3866 !important;
     display: block;
 }
 
@@ -152,7 +152,7 @@ header {
 }
 
 .dropdown-content li a {
-    color: #000;
+    color: #3B3866;
 }
 
 .dropdown:hover .dropdown-content {
@@ -179,7 +179,7 @@ header {
 }
 
 .inner-dropdown-content li a {
-    color: #000;
+    color: #3B3866;
 }
 
 .inner-dropdown:hover .inner-dropdown-content {
@@ -288,6 +288,13 @@ header {
     width: 50px;
 }
 
+.phonics-hero-img{
+    position: absolute;
+    top: 2%;
+    left: 80%;
+    width: 50px;
+}
+
 .rhymes-hero-img-item{
     position: absolute;
     top: 2%;
@@ -301,10 +308,18 @@ header {
     margin-left: 324px;
 }
 
+.fun-hero h5{
+    color: #3B3866;
+}
+
+.fun-cards h2, h5, p{
+    color: #3B3866;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 768px) {
 
     .hero-text{
-        font-size: 20px;
+        font-size: 19px;
         margin-top: -30px;
         color: white;
         margin-left: 28px;
@@ -313,6 +328,11 @@ header {
         padding-top: 20px;
         padding-right: 0px;
         padding-left: 0px;
+    }
+
+    .fun-hero-pd{
+        padding-left: 15px;
+        padding-right: 15px;
     }
     .fun-hero h3{
         font-size: 12px;
@@ -332,7 +352,7 @@ header {
     .overlay-content {
         position: absolute;
         top: 90%;
-        left: 54%;
+        left: 50%;
         transform: translate(-50%, -50%);
         display: flex;
         align-items: center;
@@ -340,11 +360,11 @@ header {
     }
     
     .overlay-content-2 {
-        left: 74%;
+        left: 71%;
     }
     
     .overlay-content-3 {
-        left: 64%;
+        left: 60%;
     }
     
     .hero-text {
@@ -360,7 +380,12 @@ header {
         flex-shrink: 0; /* Prevent the image from shrinking */
     }
     
-    
+    .phonics-hero-img{
+        position: absolute;
+        top: 2%;
+        left: 67%;
+        width: 50px;
+    }
 
     .animal-hero-img{
         position: relative;
@@ -456,7 +481,7 @@ a{
 
 @media only screen and (min-width: 320px) and (max-width: 768px) {
     .rhymes-hero{
-        padding: 50px 20px;
+        padding: 24px 20px;
     }
 }
 
@@ -492,6 +517,7 @@ a{
 
     .card-title{
         font-size: 16px;
+        color: #3B3866;
     }
 
     .card-text{
@@ -570,12 +596,13 @@ a{
 .snaps p{
     text-align: center;
     margin-top: 20px;
-    color: #000000;
+    color: #3B3866;
 }
 
 .snaps-item h1{
     font-size: 25px;
     margin-bottom: 20px;
+    color: #3B3866;
 }
 
 
